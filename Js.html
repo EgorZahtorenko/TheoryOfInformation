@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Egor Z</title>
+    <link rel="stylesheet" href="MainIndexStyle.css">
+    <link rel="stylesheet" href="MainCoffieWorkStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="JsStyle.css">
+</head>
+
+<body>
+
+<menu>
+    <div id="menu">
+        <a>WebSite</a>
+    </div>
+
+    <div id="submenu">
+        <div id="list">
+            <span>
+                <a href="MainIndex.html" id="home" class="link">Plus</a>
+            </span>
+
+            <span>
+                <a href="MainCoffieWork.html" class="link">Coffie</a>
+            </span>
+
+            <span>
+                <a href="Js.html" class="link">Js</a>
+            </span>
+
+            <span>
+                <a href="Js%202.html" class="link">Js 2</a>
+            </span>
+        </div>
+    </div>
+</menu>
+
+<content>
+
+    <div id="Text">
+        <div id="input">
+            <input value="JavaScript" onclick="alert('Hello from JavaScript!')" type="button">
+        </div>
+
+        <div id="staticText">
+            <h1>Статический текст</h1>
+            <span>Этот текст динамический:
+                <br><br>
+                <script language="JavaScript">
+                    document.write('Текущая дата: ' + Date());
+                </script>
+            </span>
+        </div>
+
+        <div id="color">
+            <h1>При нажатии на кнопку - изменится фон блока!</h1>
+            <script language="JavaScript">
+                function JSClick() {
+                    document.body.style.backgroundColor = "yellowgreen";
+                }
+            </script>
+            <input value="Изменить цвет"  name="js" onClick="JSClick()" type="button">
+            <br><br>
+            <script language="JavaScript">
+                function noneStyle() {
+                    document.body.style.backgroundColor = "#e1e4eb";
+                }
+            </script>
+            <input value="Изменить обратно"  name="js" onClick="noneStyle()" type="button">
+        </div>
+    </div>
+
+
+</content>
+
+<footer>
+
+</footer>
+
+<script src="Js.js"></script>
+</body>
+</html>

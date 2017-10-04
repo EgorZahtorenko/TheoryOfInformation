@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Egor Z</title>
+    <link rel="stylesheet" href="MainIndexStyle.css">
+    <link rel="stylesheet" href="MainCoffieWorkStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <link rel="stylesheet" href="JsStyle.css">
+</head>
+
+<body>
+
+<menu>
+    <div id="menu">
+        <a>WebSite</a>
+    </div>
+
+    <div id="submenu">
+        <div id="list">
+            <span>
+                <a href="MainIndex.html" id="home" class="link">Plus</a>
+            </span>
+
+            <span>
+                <a href="MainCoffieWork.html" class="link">Coffie</a>
+            </span>
+
+            <span>
+                <a href="Js.html" class="link">Js</a>
+            </span>
+
+            <span>
+                <a href="Js%202.html" class="link">Js 2</a>
+            </span>
+        </div>
+    </div>
+</menu>
+
+<content>
+
+    <table>
+        <tr>
+            <td>
+                <h1 align = "center">&nbsp;</h1>
+                <br />
+                Не желаете ли выпить кофе?
+                <br />
+                <br />
+                Выберите размер:
+                <br />
+                1 - маленький
+                <br />
+                2 - средний
+                <br />
+                3 - большой
+                <br />
+                <br />
+                <input id="TextBox" type="text" />
+                <label for="TextBox"></label>
+                <br />
+                <br />
+                <input id="Button_Get" type="button" value="Получить кофе!" onclick="return Button_Get_onclick()" />
+                <br />
+                <br />
+            </td>
+            <td>
+                <img alt="" src="" id="Image" />
+            </td>
+        </tr></table>
+    <script language="javascript" type="text/javascript">
+        function Button_Get_onclick() {
+            var i = document.getElementById('TextBox').value;
+            var cost = 0;
+            var pic = document.getElementById('Image');
+            switch (i) {
+            case "1":
+                cost += 1;
+                pic.src = "images/cup_small.jpg";
+                break;
+            case "2":
+                cost += 2;
+                pic.src = "images/cup_medium.jpg";
+                break;
+            case "3":
+                cost += 3;
+                pic.src = "images/cup_large.jpg";
+                break;
+            default:
+                alert("Вы можете выбрать только цифры 1, 2 или 3!");
+                pic.src = "";
+            }
+            if (i == "1" || i == "2" || i == "3") {
+                alert("Пожалуйста, вставьте " + cost + " BYN");
+            }
+
+        }
+    </script>
+
+
+
+</content>
+
+<footer>
+
+</footer>
+
+<script src="Js.js"></script>
+</body>
+</html>

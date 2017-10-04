@@ -1,0 +1,25 @@
+.bar {
+    display: none;
+}
+
+#Coffie a{
+    text-decoration: none;
+    font-size: 20pt;
+    color: #e1e4eb;
+    padding: 3px;
+    background: #02147f;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#Coffie a:hover{
+    color: #02147f;
+    background: #e1e4eb;
+    border: 1px solid #02147f;
+    box-sizing: border-box;
+}
+
+#Coffie span, .bar{
+    font-size: 20pt;
+    color: #02147f;
+}
